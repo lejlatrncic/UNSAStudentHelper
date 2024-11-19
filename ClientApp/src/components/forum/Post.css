@@ -1,0 +1,51 @@
+﻿/* src/components/forum/Post.css */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.post__likeButton {
+    display: flex;
+    align-items: center;
+}
+
+.card-text {
+    color: #333;
+}
+
+.comment__form {
+    display: flex;
+    align-items: center;
+}
+
+.comment__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment__inputs input,
+.comment__inputs textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment__inputs button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post__comments {
+    margin-top: 20px;
+}

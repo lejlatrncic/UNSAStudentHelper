@@ -1,0 +1,21 @@
+﻿/* Add this to your CSS file */
+body, html {
+    height: 100%; /* Full height for the body and html */
+    margin: 0; /* Remove default margin */
+}
+
+.login-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f7f7f7; /* Optional: Set a background color */
+}
+
+.login-box {
+    width: 300px; /* Set the width of the login box */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background for the box */
+}
