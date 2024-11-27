@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import AdminLogin from './components/admin/AdminLogin';
 import AdminPanel from './components/admin/AdminPanel';
+import HomePage from './pages/home/HomePage';
 import Articles from './pages/blog/Articles';
 import ArticlesByCategory from './pages/blog/ArticlesByCategory';
 import Article from './pages/blog/Article';
@@ -50,7 +51,7 @@ function App() {
                     {/* Početna stranica */}
                     <Route
                         path="/"
-                        element={<h2>Welcome to UNSA Student Helper!</h2>}
+                        element={<HomePage />}
                     />
                 </Routes>
             </main>

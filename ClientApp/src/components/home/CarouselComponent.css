@@ -1,0 +1,42 @@
+﻿.carousel-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    bottom: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.carousel-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+/* Prilagođavanje visine za različite uređaje */
+@media (min-width: 992px) {
+    .carousel-image {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+        min-height: 700px;
+    }
+
+    .carousel-title {
+        font-size: 2.5rem !important;
+    }
+
+    .carousel-text {
+        font-size: 1rem;
+    }
+}

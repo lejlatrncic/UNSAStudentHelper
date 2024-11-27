@@ -5,10 +5,22 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header className="p-3 d-flex justify-content-between align-items-center shadow">
-            <div className="logo d-flex align-items-center">
-                <img src="https://www.unsa.ba//themes/unsa/images/logo.jpg" alt="UNSA Logo" style={{ width: '40px', marginRight: '10px' }} />
-                <h1 className="m-0">UNSA Student Helper</h1>
-            </div>
+            <Link
+                to="/"
+                style={{
+                    textDecoration: "none",
+                    color: "inherit", // Matches the text color of the child elements
+                }}
+            >
+                <div className="logo d-flex align-items-center">
+                    <img
+                        src="https://www.unsa.ba//themes/unsa/images/logo.jpg"
+                        alt="UNSA Logo"
+                        style={{ width: "40px", marginRight: "10px" }}
+                    />
+                    <h1 className="m-0 text-black">UNSA Student Helper</h1>
+                </div>
+            </Link>
             <button
                 className="navbar-toggler d-lg-none"
                 type="button"
