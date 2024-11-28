@@ -28,7 +28,9 @@ const Contact = () => {
             </div>
             <div className="row">
                 {/* Map Column */}
-                <div className="col-lg-4 col-12">
+                <div className="col-lg-4 col-12" style={{
+                    backgroundColor: "#484848",
+                }}>
                     <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1217.4591787559461!2d18.39400615117011!3d43.85687142728512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c9246e016a2b%3A0x5515e4d7b224b818!2sPoljoprivredno-prehrambeni%20fakultet%20Univerziteta%20u%20Sarajevu!5e1!3m2!1shr!2sba!4v1731571053872!5m2!1shr!2sba"
@@ -48,8 +50,10 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Contact Information */}
-                <div className="col-lg-4 col-12 d-flex flex-column py-5 px-3">
+                {/* Contact Information */ }
+                    < div className="col-lg-4 col-12 d-flex flex-column py-5 px-3" style={{
+                        backgroundColor: "white",
+                    }}>
                     <h4>POSJETITE NAS</h4>
                     <p className="text-muted">Molimo da se prethodno najaviš kako bismo osigurali da dobiješ potrebnu podršku u odgovarajućem terminu.</p>
                     <div>

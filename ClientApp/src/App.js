@@ -1,6 +1,7 @@
 ﻿import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/home/Footer';
 import AdminLogin from './components/admin/AdminLogin';
 import AdminPanel from './components/admin/AdminPanel';
 import HomePage from './pages/home/HomePage';
@@ -38,15 +39,15 @@ function App() {
                         path="/admin/admin-panel"
                         element={admin ? <AdminPanel /> : <p>Access Denied. Please log in as admin.</p>}
                     />
-                    //Blog
+                    
                     <Route path="/blog/articles" element={<Articles />} />
                     <Route path="/blog/articles/:id" element={<ArticlesByCategory />} />
                     <Route path="/blog/article/:id" element={<Article />} />
                     <Route path="/chatbot" element={<Chatbot />} />
-                    //Forum
+                    
                     <Route path="/forum" element={<Home />} />
                     <Route path="/post/:id" element={<PostDetail />} />
-                    //Contact
+                    
                     <Route path="/contact" element={<Contact />} />
                     {/* Početna stranica */}
                     <Route
@@ -55,6 +56,8 @@ function App() {
                     />
                 </Routes>
             </main>
+            <Footer />
+
         </div>
     );
 }
