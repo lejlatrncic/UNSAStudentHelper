@@ -1,0 +1,7 @@
+﻿/* Stil za pozadinsku sliku */
+.banner-image {
+    object-fit: cover; /* Uklapanje slike u okvir */
+    object-position: center; /* Fokus na donji deo slike */
+    width: 100%; /* Širina zauzima ceo prostor */
+    height: 30vh; /* Visina zauzima 30% visine prikaza */
+}

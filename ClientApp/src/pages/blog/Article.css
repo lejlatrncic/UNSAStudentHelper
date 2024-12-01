@@ -1,0 +1,11 @@
+﻿.responsive-video {
+    width: 80%;
+    height: 450px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .responsive-video {
+        width: 100%;
+    }
+}

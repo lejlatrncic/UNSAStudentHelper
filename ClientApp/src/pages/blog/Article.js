@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchArticle, fetchCategories } from '../../firebase';
 import Categories from '../../components/blog/Categories';
 import ArticlesList from '../../components/blog/ArticlesList';
+import './Article.css';
 
 const Article = () => {
     const { id } = useParams();
@@ -41,7 +42,7 @@ const Article = () => {
                             <iframe
                                 src={article.videoURL.replace("watch?v=", "embed/")}
                                 title="YouTube video player"
-                                style={{ width: "80%", height: "450px", border: "none" }}
+                                className="responsive-video"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                             ></iframe>

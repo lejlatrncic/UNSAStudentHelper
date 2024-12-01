@@ -16,7 +16,7 @@ const Footer = () => {
 
             {/* Dno - Powered by */}
             <div className="text-center py-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                <p className="mb-0 text-primary">Powered by Lejla Trnčić <i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                <p className="mb-0 text-primary">Powered by Lejla Trnčić <i className="fa fa-heart-o" aria-hidden="true"></i></p>
             </div>
         </footer>
     );
