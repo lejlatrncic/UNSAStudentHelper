@@ -4,6 +4,8 @@ import { fetchArticle, fetchCategories } from '../../firebase';
 import Categories from '../../components/blog/Categories';
 import ArticlesList from '../../components/blog/ArticlesList';
 import './Article.css';
+import Search from '../../components/blog/Search';
+
 
 const Article = () => {
     const { id } = useParams();
@@ -32,6 +34,7 @@ const Article = () => {
                 <div className="row">
                     {/* Main article content */}
                     <div className="col-md-9 col-sm-12">
+                        <Search />
                         <Categories />
                         <h1>{article.title}</h1>
                         <img src={article.imageURL} alt={article.title} className="img-fluid w-100 mb-5" />

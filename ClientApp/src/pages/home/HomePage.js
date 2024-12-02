@@ -7,6 +7,7 @@ import ArticleLink from '../../components/blog/ArticleLink';
 import Banner from '../../components/home/Banner';
 import Post from '../../components/forum/Post'; // Import Post komponente
 import { Link } from 'react-router-dom';
+import Contact from '../../pages/contact/Contact';
 
 const Homepage = () => {
     const [categories, setCategories] = useState([]);
@@ -194,7 +195,11 @@ const Homepage = () => {
 
                         </div>
                     </div>
+                     
                 </div>
+                <div className="col-10">
+                    <Contact />
+                </div>   
             </div>
         </div>
     );

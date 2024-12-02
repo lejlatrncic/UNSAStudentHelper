@@ -4,6 +4,8 @@ import { db, fetchCategories } from '../../firebase'; // Import existing fetchCa
 import { Link } from 'react-router-dom';
 import Categories from '../../components/blog/Categories';
 import ArticlesList from '../../components/blog/ArticlesList';
+import Search from '../../components/blog/Search';
+
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -63,6 +65,7 @@ const Articles = () => {
                     </p>
                 </div>
             </div>
+            <Search />
             <Categories />
             {articles.length > 0 ? (
                 <>
@@ -74,7 +77,7 @@ const Articles = () => {
                                         <img
                                             src={articles[0].imageURL || 'defaultImageURL.jpg'}
                                             className="card-img-top"
-                                            alt="Article image"
+                                            alt="Article"
                                         />
                                         <div className="position-absolute top-0 end-0 m-2">
                                             <span className="badge bg-secondary">
@@ -103,7 +106,7 @@ const Articles = () => {
                                             <img
                                                 src={article.imageURL || 'defaultImageURL.jpg'}
                                                 className="card-img-top"
-                                                alt="Article image"
+                                                alt="Article"
                                             />
                                             <div className="position-absolute top-0 end-0 m-2">
                                                 <span className="badge bg-secondary">

@@ -8,6 +8,7 @@ import HomePage from './pages/home/HomePage';
 import Articles from './pages/blog/Articles';
 import ArticlesByCategory from './pages/blog/ArticlesByCategory';
 import Article from './pages/blog/Article';
+import SearchResults from './pages/blog/SearchResults';
 import Chatbot from './components/chatbot/Chatbot';
 import ChatbotLoader from './components/chatbot/ChatbotLoader';
 import Home from './pages/forum/Home';
@@ -43,6 +44,7 @@ function App() {
                     <Route path="/blog/articles" element={<Articles />} />
                     <Route path="/blog/articles/:id" element={<ArticlesByCategory />} />
                     <Route path="/blog/article/:id" element={<Article />} />
+                    <Route path="/blog/search" element={<SearchResults />} />
                     <Route path="/chatbot" element={<Chatbot />} />
                     
                     <Route path="/forum" element={<Home />} />
